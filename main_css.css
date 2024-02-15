@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Spectral;
+	src: url(Spectral/Spectral-ExtraLight.ttf);
+}
+
+
+
+html{
+	font-size: 15px
+
+}
+
+body{
+	font-family: Spectral;
+
+	background-color: #000000;
+	color: #ffffff;
+
+
+
+}
