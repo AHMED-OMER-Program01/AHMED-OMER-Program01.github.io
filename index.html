@@ -9,23 +9,6 @@
 
 	<body>  
 		<main>
-			<script>
-				const ress;
-				let tf;
-
-
-				async function readTextFile() 
-				{
-					ress = await fetch("myText.txt")
-						.then((res) => res.text())
-						.then((text) => { alert(text) })
-						.catch((e) => console.error(e));
-					alert("grooossss");
-				}
-
-				readTextFile();
-
-			</script>
 
 
 			
@@ -43,7 +26,21 @@
 	
 
 
-	
+	<script>
+		alert("grooossss1");
+
+		async function readTextFile() 
+		{
+			ress = await fetch("myText.txt")
+				.then((res) => res.text())
+				.then((text) => { alert(text) })
+				.catch((e) => console.error(e));
+			alert("grooossss2");
+		}
+
+		readTextFile();
+
+	</script>
 
 
 
