@@ -8,17 +8,42 @@
 	</head>
 
 	<body>  
-		<script>
-			let ct;
-			let tf;
-			alert("RADICAL DELETION OF CODE TEST");"
-			document.getElementById("hope") = "TTEESSTT__!!@@TT!!__";
-		</script>
-
-
-
-
 		<main>
+			<script>
+				let ct;
+				let tf;
+				window.onload = function lll()
+			    	{
+						
+			        	if (window.XMLHttpRequest)
+			        	{ 
+			            		tf = new XMLHttpRequest(); 
+			        	}
+		
+					tf.open("GET", "mainText_1.txt");
+		
+					alert("please show up...");
+			        	tf.onreadystatechange = function ()
+			        	{   
+			            		if (tf.readyState == 4 && tf.status == 200 && tf.readyState === xhr.DONE)
+			            		{ 
+							ct = tf.responseText; 
+			            		}
+						else
+						{
+							alert("Dang it! Error!");
+						}
+							
+			        	};
+			        tf.send();
+		
+			    	}
+				alert("RADICAL DELETION OF CODE TEST");"
+				document.getElementById("hope") = "TTEESSTT__!!@@TT!!__";
+			</script>
+
+
+			
 			<h1>Website! V0.004</h1>
 			<p>V0.001: Github domain Aquired; HTML-Website loads.</p>
 			<p>V0.002: Letters written; re-learning HTML.</p>
