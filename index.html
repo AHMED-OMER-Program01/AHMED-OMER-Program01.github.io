@@ -18,18 +18,20 @@
 	        		}
 	        		tf.onreadystatechange = function ()
 	        		{   
-	            			if (tf.readyState == 4 && tf.status == 200)
-	            			{ 
-						tf.onload = function()
-						{
-	                				ct = tf.responseText; 
-							alert(ct);
-							alert("is ct bloody empty?");
-						}
-	            			}
-					
 					tf.open("GET", "mainText_1.txt");
 	        			tf.send();
+					
+	            			if (tf.readyState == 4 && tf.status == 200 && tf.readyState === xhr.DONE)
+	            			{ 
+						ct = tf.responseText; 
+						alert(ct);
+						alert("is ct bloody empty?");
+	            			}
+					else
+					{
+						alert("Dang it! Error!");
+					}
+					
 	        		};
 
 	    		}
