@@ -33,9 +33,13 @@
 		{
 			const ress = await fetch("mainText_1.txt")
 				.then((res) => res.text)
-				.then((text) => console.log(text));
-			let gg = ress.innerText();
-			alert( gg );
+				.then((text) => {	function()
+							{
+								console.log(text.innerText()));
+								let gg = ress.innerText();
+								alert( gg );
+							}});
+
 		}
 		alert("1");
 
