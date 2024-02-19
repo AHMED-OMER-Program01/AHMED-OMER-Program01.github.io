@@ -17,9 +17,11 @@
 			<p>V0.004: Fonts are working; used Google-font sourced free domain font. Name; Spectral. Might change to different one; thinking a monospaced serif?</p>
 			<p id="demo"></p>
 
+			<p>fileName("mainText_1.txt")</p>
 
 			<script>
-
+			function fileName( nnam )
+			{
 				fetch("mainText_1.txt")
 					.then(function (hate) 
 					{
@@ -28,9 +30,10 @@
 					.then(function (text)
 					{	
 						alert("Learning ANOTHER new language. Yay.");
-						return document.write(text);
+						return(text);
 					});
-				
+				return(text);
+			}
 			</script>
 			
 
