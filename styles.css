@@ -24,7 +24,6 @@ body{
 	width: 250px;
 	white-space: pre-wrap;
 	white-space: pre-line;
-	overflow-wrap: break-word;
 	border: 1px outset lightgreen;
 	background-color: grey;
 }
