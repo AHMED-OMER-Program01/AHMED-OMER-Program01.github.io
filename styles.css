@@ -19,11 +19,11 @@ body{
 
 
 .testF {
+	text-align: left;
+	font-size: 10px;
 	white-space: pre-wrap;
 	white-space: pre-line;
 	overflow-wrap: break-word;
-	border: 5px outset lightgreen;
+	border: 1px outset lightgreen;
 	background-color: grey;
-	text-align: left;
-	font-size: 15px;
 }
