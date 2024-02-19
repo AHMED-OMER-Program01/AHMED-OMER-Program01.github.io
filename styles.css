@@ -24,8 +24,8 @@ body{
 	overflow-wrap: break-word;
 	border: 5px outset lightgreen;
 	background-color: grey;
-	text-align: center;
-	height: 500px;
+	text-align: left;
+	height: 750px;
   	width: 100%;
 	font-size: 15px;
 }
