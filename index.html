@@ -43,9 +43,7 @@
 
 
 	<script>
-		var ct;
-
-    		function lll()
+    		function lll(nmm)
     		{   
         		var tf;
         		if (window.XMLHttpRequest)
@@ -56,15 +54,17 @@
         		{   
             			if (tf.readyState == 4 && tf.status == 200)
             			{ 
-                			ct = tf.responseText; 
+                			return( tf.responseText ); 
             			}
         		}
         
-		tf.open("GET", "mainText_1.txt", true);
+		tf.open("GET", nmm, true);
         	tf.send();
 
     		}
 
+		
+		var ct = lll("mainText_1.txt");
 		document.getElementById("hope").innerText = ct;
 
 	</script>
