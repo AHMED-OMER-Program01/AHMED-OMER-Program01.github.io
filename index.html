@@ -44,7 +44,15 @@
 
 	<script>
     		function lll(nmm)
-    		{   
+    		{
+			$.ajax(
+			{
+    				async:false;
+   				url: nmm,
+    				dataType: 'text',
+   			});
+
+			
         		var tf;
         		if (window.XMLHttpRequest)
         		{ 
@@ -65,7 +73,7 @@
 
 		
 		var ct = lll("mainText_1.txt");
-		document.getElementById("hope").innerText = ct;
+		document.getElementById("hope") = ct;
 
 	</script>
 
