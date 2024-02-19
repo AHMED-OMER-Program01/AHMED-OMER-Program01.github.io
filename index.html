@@ -10,13 +10,17 @@
 	<body>  
 		<main>
 			<script>
-				let ct;
+				const ress;
 				let tf;
 
 
 				async function readTextFile() 
 				{
-					alert( (await fetch("main.Text_1.txt")).text() );
+					ress = await fetch("myText.txt")
+						.then((res) => res.text())
+						.then((text) => { tf = await ress.text })
+						.catch((e) => console.error(e));
+					alert(tf);
 				}
 
 				readTextFile();
