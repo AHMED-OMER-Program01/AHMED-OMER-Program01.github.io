@@ -3,7 +3,11 @@
 	src: url(Spectral/Spectral-ExtraLight.ttf);
 }
 
-
+.testF {
+	border: 5px outset blue;
+	background-color: green;
+	text-align: center;
+}
 
 html{
 	font-size: 15px
