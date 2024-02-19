@@ -16,16 +16,17 @@
 	        		{ 
 	            			tf = new XMLHttpRequest(); 
 	        		}
-	        		tf.onreadystatechange = ( tf.onload = function ()
+	        		tf.onreadystatechange = function ()
 	        		{   
 	            			if (tf.readyState == 4 && tf.status == 200)
 	            			{ 
 						tf.open("GET", "mainText_1.txt");
 	        				tf.send();
-						alert("oh? Does it work?");
+
 	                			ct = tf.responseText ; 
+						alert(ct);
 	            			}
-	        		});
+	        		};
 
 	    		}
 
