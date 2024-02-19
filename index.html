@@ -8,11 +8,13 @@
 		<script>
 		
 			alert("1");
+			let gg = "";
 			window.onload = async function looooa()
 			{
 				const ress = await fetch("mainText_1.txt")
 					.then((res) => res.text)
-					.then((text) => console.log(text));
+					.then((text) => (gg));
+				alert(gg);
 			}
 		
 			alert("2");
