@@ -20,6 +20,7 @@ body{
 
 .testF {
 	white-space: pre-wrap;
+	white-space: pre-line;
 	overflow-wrap: break-word;
 	border: 5px outset lightgreen;
 	background-color: grey;
