@@ -12,8 +12,8 @@
 				//over 24 hours since I last slept. I can't sleep now; I need to fix my schedule. So... Here's to more? )
 				const ress = await fetch("mainText_1.txt")
 					.then(function (res){	return res;		})
-					.then(function (data){	return data.text();	})
-					.then(function (text){	document.getElementById("hope").innerHTML = text;	})
+					.then(function (data){	return data.innerText();	})
+					.then(function (text){	document.getElementById("hope").innerHTML = innerText();	})
 					.catch(function (err){	console.log('Fetch problem show: ' + err.message);	});
 				//JUST IN CASE; CREDIT TO;
 				//Rajdeep Singh, at/from https://officialrajdeepsingh.dev/posts/read-locally-txt-file-use-fetch-method-in-javascript!
