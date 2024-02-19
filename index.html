@@ -4,16 +4,8 @@
 
 		<link rel="stylesheet" href="styles.css">
 		<title>Ahmed_Omer_Eportfolio</title>
-
-
-		
+	
 	</head>
-
-
-
-
-
-
 
 	<body>  
 		
@@ -28,13 +20,6 @@
 			<div class="testF">
 				<p id="hope"></p>
 			</div>
-			
-
-
-
-
-
-
 		</main>
 	</body>
 	
@@ -45,13 +30,6 @@
 	<script>
     		function lll(nmm)
     		{
-			$.ajax(
-			{
-    				async:false;
-    				dataType: 'text',
-   			});
-
-			
         		var tf;
         		if (window.XMLHttpRequest)
         		{ 
@@ -64,12 +42,9 @@
                 			return( tf.responseText ); 
             			}
         		}
-        
 		tf.open("GET", nmm, true);
         	tf.send();
-
     		}
-
 		
 		var ct = lll("mainText_1.txt");
 		document.getElementById("hope") = ct;
