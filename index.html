@@ -29,14 +29,14 @@
 	<script>
 		alert("grooossss1");
 		const source = document.getElementById("hope");
-		async function readTextFile() 
+		async function readTextFile() : 
 		{
 			ress = await fetch("myText.txt")
 				.then((res) => res.text())
 				.then((text) => text.innerText)
 				.then(source = text.innerText)
 				.catch((e) => console.error(e));
-			alert(source);
+			alert(text.innerText);
 		}
 		
 		readTextFile();
