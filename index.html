@@ -12,7 +12,7 @@
 				//over 24 hours since I last slept. I can't sleep now; I need to fix my schedule. So... Here's to more? )
 				const ress = await fetch("mainText_1.txt")
 					.then(function (res){	return res;		})
-					.then(function (data){	return data.innerText();	})
+					.then(function (data){	return data.text();	})
 					.then(function (text){	document.getElementById("hope").innerHTML = text;	})
 					.catch(function (err){	console.log('Fetch problem show: ' + err.message);	});
 				//JUST IN CASE; CREDIT TO;
@@ -26,7 +26,7 @@
 	</head>
 
 	<body>  
-		<main id="hope">
+		<main id="hope" style='white-space:pre>
 		</main>
 	</body>
 	
