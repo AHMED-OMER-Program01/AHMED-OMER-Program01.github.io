@@ -30,6 +30,7 @@
 	<script>
     		function lll()
     		{
+			let ct;
         		let tf;
         		if (window.XMLHttpRequest)
         		{ 
@@ -40,14 +41,14 @@
             			if (tf.readyState == 4 && tf.status == 200)
             			{ 
 					alert("oh? Does it work?");
-                			return( tf.responseText ); 
+                			ct tf.responseText ; 
             			}
         		}
-		tf.open("GET", "mainText_1.txt", true);
-        	tf.send();
+			tf.open("GET", "mainText_1.txt", true);
+        		tf.send();
     		}
 
-		let ct = lll();
+		
 		document.getElementById("hope") = "test";
 
 	</script>
