@@ -16,11 +16,9 @@
 
 				async function readTextFile() 
 				{
-					alert("async function inside");
-					document.getElementById("hope") = ( (await fetch("main.Text_1.txt")).text() );
+					alert( (await fetch("main.Text_1.txt")).text() );
 				}
 
-				alert("after async function");
 				readTextFile();
 
 			</script>
