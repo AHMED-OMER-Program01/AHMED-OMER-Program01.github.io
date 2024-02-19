@@ -8,10 +8,12 @@
 		<script>
 		
 			alert("1");
-		
-			const ress = await fetch("mainText_1.txt")
-				.then((res) => res.text)
-				.then((text) => console.log(text));
+			window.onload = async function looooa()
+			{
+				const ress = await fetch("mainText_1.txt")
+					.then((res) => res.text)
+					.then((text) => console.log(text));
+			}
 		
 			alert("2");
 
