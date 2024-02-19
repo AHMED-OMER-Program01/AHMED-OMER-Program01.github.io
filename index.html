@@ -27,11 +27,15 @@
 
 
 	<script>
+		let temp;
 		async function readTextFile()
 		{
 			ress = await fetch("myText.txt")
-				.then((res) => {return(res.text())})
+				.then((res) => res.innerText)
+				.then((text) => temp)
+				.then((temp) => { return( temp.innerText() ) } )
 				.catch((e) => console.error(e));
+			alert(temp);
 		}
 		
 		const source = document.getElementById("hope") = "xdfghhg";
