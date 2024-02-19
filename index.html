@@ -8,15 +8,17 @@
 		<script>
 		
 			alert("1");
-			let gg = "teesssttt";
-			window.onload = async function looooa()
+			window.onload = async function looooa() //borrowed code; time to test how dumb I am
 			{
+				alert("2");
 				const ress = await fetch("mainText_1.txt")
-					.then((ress) => ress.text)
-					.then((ress.text) => alert(text) );
+					.then(function (res){	return res;		})
+					.then(function (data){	return data.text();	})
+					.then(function (text){	document.getElementById("hope").innerHTML = text;	})
+					.catch(function (err){	console.log('Fetch problem show: ' + err.message);	});
+				alert("3");
 			}
-		
-			alert("2");
+			alert("4");
 
 
 		</script>
