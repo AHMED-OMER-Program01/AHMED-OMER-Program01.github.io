@@ -30,14 +30,12 @@
 		let temp;
 		async function readTextFile()
 		{
-			ress = await fetch("myText.txt")
-				.then((res) => res.innerText)
-				.then((text) => temp)
-				.then((temp) => { console.log( temp.innerText() ) } )
+			ress = await fetch("mainText_1.txt")
+				.then((res) => res.text)
+				.then((text) => { console.log( text ) } )
 				.catch((e) => console.error(e));
 		}
-		let gg = temp.innerText();
-		alert("1");
+
 		const source = document.getElementById("hope") = "xdfghhg";
 		alert("2");
 
