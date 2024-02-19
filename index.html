@@ -20,12 +20,16 @@
 	        		{   
 	            			if (tf.readyState == 4 && tf.status == 200)
 	            			{ 
-						tf.open("GET", "mainText_1.txt");
-	        				tf.send();
-
-	                			ct = tf.responseText ; 
-						alert(ct);
+						tf.onload = function()
+						{
+	                				ct = tf.responseText; 
+							alert(ct);
+							alert("is ct bloody empty?");
+						}
 	            			}
+					
+					tf.open("GET", "mainText_1.txt");
+	        			tf.send();
 	        		};
 
 	    		}
