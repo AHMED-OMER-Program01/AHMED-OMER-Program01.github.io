@@ -4,15 +4,16 @@
 }
 
 .testF {
-	border: 5px outset blue;
-	background-color: green;
+	border: 5px outset lightgreen;
+	background-color: grey;
 	text-align: center;
 	height: 200px;
   	width: 50%;
+	font-size: 15px;
 }
 
 html{
-	font-size: 15px
+	font-size: 15px;
 
 }
 
