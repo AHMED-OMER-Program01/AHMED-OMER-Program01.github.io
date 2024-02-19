@@ -20,14 +20,12 @@
 
 				tf.open("GET", "mainText_1.txt");
 
-				
+				alert("please show up...");
 	        		tf.onreadystatechange = function ()
 	        		{   
 	            			if (tf.readyState == 4 && tf.status == 200 && tf.readyState === xhr.DONE)
 	            			{ 
 						ct = tf.responseText; 
-						alert(ct);
-						alert("is ct bloody empty?");
 	            			}
 					else
 					{
