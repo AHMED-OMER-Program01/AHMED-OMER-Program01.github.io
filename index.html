@@ -29,20 +29,12 @@
 	<script>
 		readTextFile();
 
-		async function readTextFile()
-		{
-			const ress = await fetch("mainText_1.txt")
-				.then((res) => res.text)
-				.then((text) => { ress = (function(text)
-							{
-								console.log(text.innerText()));
-								alert( "0" );
-								return(text.innerText());
-								alert( "-1" );
-							}); } );
-
-		}
 		alert("1");
+		const ress = await fetch("mainText_1.txt")
+			.then((res) => res.text)
+			.then((text) => { console.log(text) } );
+
+		alert(ress);
 
 		
 
