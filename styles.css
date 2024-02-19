@@ -21,7 +21,7 @@ body{
 .testF {
 	text-align: left;
 	font-size: 15px;
-	width: 100%px;
+	width: 50%;
 	white-space: pre-wrap;
 	white-space: pre-line;
 	border: 1px outset lightgreen;
