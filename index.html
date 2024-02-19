@@ -27,18 +27,14 @@
 
 
 	<script>
-		alert("grooossss1");
-		const source = document.getElementById("hope");
 		async function readTextFile()
 		{
 			ress = await fetch("myText.txt")
-				.then((res) => res.text())
-				.then((text) => { console.log(source) })
+				.then((res) => {return(res.text())})
 				.catch((e) => console.error(e));
-			alert(source);
 		}
 		
-		readTextFile();
+		const source = document.getElementById("hope") = readTextFile();
 
 	</script>
 
