@@ -27,16 +27,18 @@
 
 
 	<script>
-		let ress;
+		readTextFile();
+
 		async function readTextFile()
 		{
-			ress = await fetch("mainText_1.txt")
+			const ress = await fetch("mainText_1.txt")
 				.then((res) => res.text)
-				.then((text) => { console.log( text ) } )
-				.catch((e) => console.error(e));
+				.then((text) => console.log(text));
 			alert("0");
 		}
 		alert("1");
+
+		
 
 
 	</script>
