@@ -27,12 +27,12 @@
 
 
 	<script>
-		let temp;
+		let ress;
 		async function readTextFile()
 		{
 			ress = await fetch("mainText_1.txt")
 				.then((res) => res.text)
-				.then((text) => { console.log( text ); } )
+				.then((text) => { console.log( text ) } )
 				.catch((e) => console.error(e));
 			alert("0");
 		}
