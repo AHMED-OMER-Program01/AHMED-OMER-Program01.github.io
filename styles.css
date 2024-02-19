@@ -21,6 +21,7 @@ body{
 .testF {
 	text-align: left;
 	font-size: 10px;
+	width: 500px;
 	white-space: pre-wrap;
 	white-space: pre-line;
 	overflow-wrap: break-word;
