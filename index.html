@@ -28,9 +28,9 @@
 
 
 	<script>
-    		function lll(nmm)
+    		function lll()
     		{
-        		var tf;
+        		let tf;
         		if (window.XMLHttpRequest)
         		{ 
             			tf = new XMLHttpRequest(); 
@@ -39,15 +39,16 @@
         		{   
             			if (tf.readyState == 4 && tf.status == 200)
             			{ 
+					alert("oh? Does it work?");
                 			return( tf.responseText ); 
             			}
         		}
-		tf.open("GET", nmm, true);
+		tf.open("GET", "mainText_1.txt", true);
         	tf.send();
     		}
-		
-		var ct = lll("mainText_1.txt");
-		document.getElementById("hope") = ct;
+
+		let ct = lll();
+		document.getElementById("hope") = "test";
 
 	</script>
 
