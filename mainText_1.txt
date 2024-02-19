@@ -1,12 +1,12 @@
-V0.001: [ Unknwn<9d ] : Github domain Aquired; HTML-Website loads.
+V0.001: [ Unknwn<9d ] : [ Unkwnc ( commits ) ] : Github domain Aquired; HTML-Website loads.
 
-V0.002: [ Unknwn<7d ] : Letters written; re-learning HTML.
+V0.002: [ Unknwn<7d ] : [ Unkwnc ] : Letters written; re-learning HTML.
 
-V0.003: [ Unknwn<5d ] : Colors, again. Made css file.
+V0.003: [ Unknwn<5d ] : [ Unkwnc ] : Colors, again. Made css file.
 
-V0.004: [ Unknwn<5d ] : Fonts are working; used Google-font sourced free domain font. Name; Spectral. Might change to different one; thinking a monospaced serif?
+V0.004: [ Unknwn<5d ] : [ Unkwnc ] : Fonts are working; used Google-font sourced free domain font. Name; Spectral. Might change to different one; thinking a monospaced serif?
 
-V0.005: [ 2-19-2024 ] : READING FROM .txt FILES IS A GO! Took an overnight; MAN, I feel dumb. Guess that shows how much more I need to practice ( lmao )! Absolute Credit to Rajdeep Singh from [ https://officialrajdeepsingh.dev ]! My final function ( as of writing, will add argument passing & such later ) was based-off of his! It's suprising how many tutorials use deprecated info? Or maybe, I'm just unlucky? ...something tells me that's the case.
+V0.005: [ 2-19-2024 ] : [ 00118c ] : READING FROM .txt FILES IS A GO! Took an overnight; MAN, I feel dumb. Guess that shows how much more I need to practice ( lmao )! Absolute Credit to Rajdeep Singh from [ https://officialrajdeepsingh.dev ]! My final function ( as of writing, will add argument passing & such later ) was based-off of his! It's suprising how many tutorials use deprecated info? Or maybe, I'm just unlucky? ...something tells me that's the case.
         Whatever! Thanks, Singh!!!
 
 Next; 
