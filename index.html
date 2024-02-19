@@ -34,8 +34,9 @@
 			ress = await fetch("myText.txt")
 				.then((res) => res.text())
 				.then((text) => text.innerText)
+				.then(source = text.innerText)
 				.catch((e) => console.error(e));
-			alert(ress);
+			alert(source);
 		}
 		
 		readTextFile();
