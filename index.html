@@ -7,18 +7,22 @@
 
 		<script>
 		
-			alert("1");
+
 			window.onload = async function looooa() //borrowed code; time to test how dumb I am
-			{
-				alert("2");
+			{	//EDIT; IT WORKS I FEEL SO STUPID LIKE HOW 
+				//( though to be fair, I'm self-teaching myself all this. But still. It's literally been like.
+				//over 24 hours since I last slept. I can't sleep now; I need to fix my schedule. So... Here's to more? )
 				const ress = await fetch("mainText_1.txt")
 					.then(function (res){	return res;		})
 					.then(function (data){	return data.text();	})
 					.then(function (text){	document.getElementById("hope").innerHTML = text;	})
 					.catch(function (err){	console.log('Fetch problem show: ' + err.message);	});
-				alert("3");
+				//JUST IN CASE; CREDIT TO;
+				//Rajdeep Singh, at/from https://officialrajdeepsingh.dev/posts/read-locally-txt-file-use-fetch-method-in-javascript!
+				//woooooooooo! In five years I'm gonna look back at this and call myself an idiot;
+				//but joke's on you! I'm already calling myself that! HAHAHAHHAHAHA
 			}
-			alert("4");
+
 
 
 		</script>
