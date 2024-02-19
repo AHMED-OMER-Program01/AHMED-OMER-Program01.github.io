@@ -20,8 +20,16 @@
 
 			<script>
 
-			var res = (fetch("mainText_1.txt")).text();
-			alert("Perfect, hatred.");
+				fetch("mainText_1.txt")
+					.then(function (hate) 
+					{
+						return hate.text();
+					})
+					.then(function (text)
+					{	
+						alert("Learning ANOTHER new language. Yay.");
+						return document.write(text);
+					});
 				
 			</script>
 			
