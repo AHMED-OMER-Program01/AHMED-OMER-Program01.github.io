@@ -12,15 +12,17 @@
 			
 	    		function lll()
 	    		{
+				
 	        		if (window.XMLHttpRequest)
 	        		{ 
 	            			tf = new XMLHttpRequest(); 
 	        		}
+
+				tf.open("GET", "mainText_1.txt");
+
+				
 	        		tf.onreadystatechange = function ()
 	        		{   
-					tf.open("GET", "mainText_1.txt");
-	        			tf.send();
-					
 	            			if (tf.readyState == 4 && tf.status == 200 && tf.readyState === xhr.DONE)
 	            			{ 
 						ct = tf.responseText; 
@@ -34,8 +36,12 @@
 					
 	        		};
 
-	    		}
+				
 
+	        		tf.send();
+
+	    		}
+			alert("Gets to end of script");"
 			document.getElementById("hope") = ct;
 
 		</script>
