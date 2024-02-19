@@ -33,11 +33,10 @@
 			ress = await fetch("myText.txt")
 				.then((res) => res.innerText)
 				.then((text) => temp)
-				.then((temp) => { return( temp.innerText() ) } )
+				.then((temp) => { console.log( temp.innerText() ) } )
 				.catch((e) => console.error(e));
-			alert(temp);
 		}
-		let gg = readTextFile();
+		let gg = temp.innerText();
 		alert("1");
 		const source = document.getElementById("hope") = "xdfghhg";
 		alert("2");
